@@ -1,13 +1,16 @@
 
 ############################################################
 # WORK IN PROGRESS
-#  currently must replace _PUT.YOUR.RELAY.HERE.hostnameORfqdnORip_ below
+#  currently must replace _PUT.YOUR.RELAY.HERE.hostnameORfqdnORip_ and _OPERATING.SYSTEM_ below
 # Run the BigFix Client on Ubuntu
 #  - https://github.com/jgstew/tools/blob/master/bash/docker_bigfix_client.sh
 # docker run -d -P --init bigfix_ubuntu
 ############################################################
 
-FROM ubuntu:latest
+FROM _OPERATING.SYSTEM_:latest
+
+LABEL OS=“_OPERATING.SYSTEM_”
+LABEL rootServer="_PUT.YOUR.RELAY.HERE.hostnameORfqdnORip_"
 
 RUN apt-get update
 RUN apt-get install wget -y
