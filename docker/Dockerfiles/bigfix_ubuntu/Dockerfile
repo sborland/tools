@@ -7,7 +7,7 @@
 # docker run -d -P --init bigfix_ubuntu
 ############################################################
 
-FROM _OPERATING.SYSTEM_:latest
+FROM _OPERATING.SYSTEM_
 
 LABEL OS=_OPERATING.SYSTEM_
 LABEL rootServer="_PUT.YOUR.RELAY.HERE.hostnameORfqdnORip_"
