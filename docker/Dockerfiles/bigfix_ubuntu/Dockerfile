@@ -11,7 +11,7 @@ FROM _OPERATING.SYSTEM_
 
 LABEL rootServer="_PUT.YOUR.RELAY.HERE.hostnameORfqdnORip_"
 
-RUN apt-get install --only-upgrade trusty-updates
+RUN apt-get update
 RUN apt-get install wget -y
 RUN wget https://raw.githubusercontent.com/jgstew/tools/master/bash/install_bigfix.sh
 
